@@ -1,0 +1,172 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container1{
+    width: 100vw;
+    height: 100vh;
+   
+    display: grid;
+    grid-template: 80px  auto/ 200px auto;
+    grid-template-areas: "header header"
+                         "menu contenido";
+    
+    /* background-color: blue; */
+}
+.item{
+    /* background: lightblue; */
+    /* padding: 10px; */
+    /* border: 1px solid red; */
+}
+.header{
+    /* background-color: red; */
+    padding: 10px 90px 10px 0px;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-content: center;
+    grid-area: header;
+    background-color: white;
+    z-index: 1;
+    
+    
+    -webkit-box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.15);
+    box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.15);
+    
+    
+    
+}
+.header input{
+    width: 500px;
+    height: 30px;
+    border-radius:5px;
+    border: 1px solid gray; 
+    }
+    .buscar{
+        padding: 12px;
+    }
+
+    .img-container{
+        width: 170px;
+        margin-left: 60px;
+    }
+
+.img-container img{
+    width: 100%
+
+}
+.mis-datos{
+    display: flex;
+    align-content: center; 
+    justify-content: space-between;
+    width:  200px;
+}
+.mis-datos h3{
+    margin-right:-50px; 
+}
+
+
+.perfil{
+    width: 50px;
+   
+   
+}
+.perfil img{
+    width: 100%;
+    border-radius:50%; 
+     
+}
+
+.icon-caret-down{
+    padding: 0px 20px 0px 0px;
+   
+}
+
+.menu{
+grid-area: menu;
+background-image: linear-gradient(to right ,#F64040, #F87171);
+color: white;
+font-size: 50px; 
+text-align:center;
+padding: 40px 0 0 0;
+/* display: flex; */
+
+
+}
+.menu span{
+    margin-top:40px; 
+    display: block;
+    
+}
+.menu .icon-home{
+    margin-top: 0px;
+}
+.menu p{
+    font-size: 20px;
+    margin: 0;
+}
+.menu .icon-cog{
+    margin-top: 230%;
+    
+    
+}
+.contenido{
+    height: 100vh;
+grid-area: contenido;
+font-size: 20px;
+border: 1px solid red;
+color:Black; 
+font-weight: bold;
+display: grid;
+grid-template: 70px 1fr 70px 1fr  / repeat(4, 1fr);
+}
+.explicacion{
+    align-content: flex-end;
+    padding-top: 40px; 
+    padding-left: 55px;
+}
+.pelicula{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+     
+    
+}
+
+.pelicula img{
+    height:390px;
+    
+}
+.imgContainer{
+    position: relative;
+    
+}
+.superpuesto{
+    color: white;
+    bottom: 50px;
+    
+    position: absolute;
+    width: 260.13px;
+    height: fit-content;
+    background-color: rgba(246, 64, 64, 0.5);
+    
+    
+}
+.superpuesto .titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    }
+.superpuesto .descripcion{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+.fix{
+    background: blue;
+    
+}

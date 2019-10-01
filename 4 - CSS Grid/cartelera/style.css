@@ -1,0 +1,154 @@
+/* CSS */
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  height: 500px;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "hd hd"
+                       "sd tl1"
+                       "sd cn1"
+                       "sd tl2"
+                       "sd cn2"
+                       "sd tl3"
+                       "sd cn3";
+}
+
+/* .item{
+  border: 1px solid blue;
+} */
+
+.header{
+  grid-area: hd;
+  height: 100px;
+  
+}
+
+.header-container{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  max-height: 100px;
+/*   border-bottom: 1px solid black; */
+  box-shadow: 0px 5px 16px -4px rgba(0,0,0,0.39);
+}
+
+.user{
+  display: flex;
+}
+
+.user p{
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.user img{
+  border: 1px solid grey;
+  border-radius: 30px;
+}
+
+.sidebar{
+  grid-area: sd;
+}
+
+.item.sidebar{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+
+
+.side-top{
+  align-items: center;
+}
+
+.sidebar img {
+  color: white;
+}
+
+.title1{
+  grid-area: tl1;
+}
+
+.title2{
+  grid-area: tl2;
+}
+
+.title3{
+  grid-area: tl3;
+}
+
+.content1{
+  grid-area: cn1;
+}
+
+.content2{
+  grid-area: cn2;
+}
+
+.content3{
+  grid-area: cn3;
+}
+
+.title1, .title2, .title3 {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.content1, .content2, .content3{
+  display: inline-flex;
+  justify-content: space-around;
+  background: #f7f7f7;
+}
+
+.item-container {
+  position: relative;
+  max-width: 200px;
+  margin: 30px;
+}
+
+.item-container .description{
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  font-size: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+form.search input[type=text] {
+  padding: 4px;
+  font-size: 12px;
+  border: 1px solid grey;
+  float: left;
+  width: 250px;
+  background: #f1f1f1;
+}
+
+form.search button {
+  float: left;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #0b7dda;
+}

@@ -1,0 +1,234 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    margin: 0;
+    flex: 1;
+    max-width: 1200px;
+    display: inherit;
+    justify-content: inherit;
+    flex-wrap: inherit;
+    margin: 0 auto;
+    align-items: inherit;
+    height: inherit;
+}
+
+.divisor{
+    display: grid;
+    /* grid-template-rows: 150px 200px;  */
+     /* grid-template-columns: 200px 300px;   */
+     /* grid-template: filas / columnas ; */
+    /* grid-template: 150px 200px / 200px 300px; */
+     /* grid-template: 550px 50% / 20% 600px;  */
+    grid-template: 1fr/ 350px 1fr;
+    height: 100vh;
+    grid-template-areas: "playlist multimedia"
+}
+
+.playlist{
+    padding: 20px 30px 20px 10px;
+    color: white;
+    background-color: rgba(9, 7, 126, 0.575);
+}
+
+.playlistAmigos{
+    font-size: 20px;
+}
+
+.imagenLogo img{
+    max-width: 100%;
+}
+
+.misBandas{
+    font-size: 20px;
+}
+
+.listaMusica p:hover{
+    cursor: pointer;
+}
+
+.amigos{
+    display: block;
+}
+
+.amigos a{
+    display: flex;
+    margin: auto auto 20px 30px;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+}
+
+.amigos a img{
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.multimedia{
+    display: grid;
+    grid-template: 350px;
+}
+
+.nombreVideo{
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.nombreVideo p{
+    color: #606060;
+    margin: 0;
+    font-size: 15px;
+}
+
+.botones{
+    display: flex;
+}
+
+.agregar{
+    background-image: linear-gradient(to right, #FE0D13 , #FF6096);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+ }
+
+.agregar, .guardar, .compartir, .rock, .salsa , .electronica, .reggaeton{
+    margin-right: 10px;
+}
+
+.agregar, .guardar, .compartir, .rock, .salsa , .electronica, .reggaeton, :hover{
+    cursor: pointer;
+}
+
+.compartir, .guardar{
+    color: #434E6A;
+    margin-left: 20px;
+    font-size: 13px;   
+}
+
+.comentarios span{
+    display: flex;
+    justify-content: center;
+    font-size: initial;  
+}
+
+.electronica{
+    margin-left: 60px; 
+    background-color: #9855FD;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+}
+.rock{
+   
+   background-color: #16EABF;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+
+}
+
+.reggaeton{
+    
+    background-color:#E01721;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+ }
+ .salsa{
+    
+    background-color: #ED3084;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+ }
+ .nombreVideo hr{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px 0px rgb(201, 201, 201);
+    margin: 10px -10px;
+ }
+
+ .comentarios{
+    display: grid;
+    grid-template: 510px  / 500px 1fr;
+}
+
+.nuevoComentario{
+    padding: 20px;
+}
+.comentarios :hover{
+   cursor: default;
+} 
+.nuevoComentario p{
+    margin-bottom: 20px;
+}
+.comentariojr{
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+.comentariojr img{
+    width: 50px;
+    /* height:  */
+    border-radius: 25px 25px 17px 17px; 
+    margin-right:8px; 
+ }
+ .comentariojr input{
+     background-color:white;
+     width: 300px;
+     cursor: text;
+     	
+    border-left:none;
+    border-right: none;
+    border-top: none;      
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+ }
+ .comentariojr input:hover{
+    cursor: text; 
+}
+.contenedorComentario img{
+    width: 50px;
+    /* height:  */
+    border-radius: 25px 25px 17px 17px; 
+    margin-right:8px; 
+ }
+ .contenedorComentario{
+     margin-top: 20px;
+     display: flex;
+     align-content: center;
+ }
+
+ .texto{
+    display: block
+}
+.texto p{
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+.texto span{
+    font-weight: 400;
+    color: rgba(6, 94, 21, 0.815)
+}
+
+.sugerencias p{
+    padding: 20px 20px 10px 20px;
+ }
+ .sugerencias img{
+     width: 60%
+ }
+ .sugerencias .nombreSugerencia{
+     display: flex;
+     justify-items: start;
+ }
+ .sugerencias img :hover{
+cursor: pointer;
+ }
+.sugerencias span:hover{
+    cursor: pointer;
+}

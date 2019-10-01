@@ -1,0 +1,51 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+div [class*="bloque"]{
+    min-height: 200px;
+    flex: 40%;
+
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.bloque1{
+    background: black;
+    color: white;
+    order: 7
+}
+
+.bloque2{
+    background: red;
+    order: 6;
+}
+
+.bloque3{
+    background: green;
+    order: 5
+}
+
+.bloque4{
+    background: blue;
+    order: 4
+}
+
+.bloque5{
+    background: yellow;
+    order: 3
+}
+
+.bloque6{
+    background: orange;
+    order: 2
+}
+
+.bloque7{
+    background: purple;
+    order: 1;
+}

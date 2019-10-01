@@ -1,0 +1,10 @@
+var multiplicarPor = 1
+
+		functionTablaDeMultiplicar(numero){
+			for (let index = 0; index <= 12; index++) {				
+			var	resultado = numero * index;
+				console.log(`${numero} * ${index} = ${resultado}`)
+			}
+		}
+
+		TablaDeMultiplicar(multiplicarPor)

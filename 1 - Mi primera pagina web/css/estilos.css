@@ -1,0 +1,22 @@
+/* Estos son selectores de etiqueta */
+/* hola quiero un hack */
+/* este es ultimo ejemplo para comentar css */
+
+body{
+    background-color: rgb(18, 196, 196);
+}
+h1{
+    color: red;
+}
+h2{
+    font-size: 20px;
+}
+footer{
+    background-color: white;
+}
+
+/* estos son selectores de tipo clase */
+.img-big{
+    width: 500px;
+    border-radius: 50%;
+}

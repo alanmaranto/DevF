@@ -1,0 +1,232 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: red; */
+}
+.container{
+    max-width: 1200px;
+    flex: 1;
+    /* justify-content:  */
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+
+ }
+ .division{
+     
+     display: grid;
+     grid-template:  1fr / 350px 1fr;
+     height: 100vh;
+     grid-template-areas: "playlist video"
+                          
+ }
+ 
+ .playlist, .video, .comentarios{
+    /* border: 1px solid red; */
+ }
+ .playlist{
+     padding: 20px 30px 20px 10px;
+     background-color: #151B31;
+     color: white;
+ }
+
+ .imageContainer img{
+    /* object-fit: cover; */
+    max-width: 100%;
+ }
+ .titulo{
+     font-size: 20px;
+ }
+ .videos p:hover{
+ cursor: pointer;
+ 
+ }
+ .amigos{
+    display: block; 
+ }
+ .amigos a{
+     display: flex;
+     margin: auto auto 10px 5px;
+     text-decoration: none;
+     align-items: center;
+     color: white;
+ }
+ .amigos a img{
+     width: 50px;
+     border-radius: 25px;
+     margin-right: 5px;
+ }
+ .video{
+     display: grid;
+     grid-template: 350px 1fr / 1fr; 
+ }
+ .pantalla, .comentarios{
+     /* border: 1px solid red; */
+ }
+ .comentarios{
+     padding: 10px;
+     padding-top:15px; 
+ }
+ .comentarios p{
+     color: #606060;
+     margin: 0;
+     font-size:15px; 
+ }
+ .botones{
+     display: flex;
+    
+     
+ }
+ .agregar{
+    background-image: linear-gradient(to right, #FE0D13 , #FF6096);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+ }
+ .agregar, .compartir, .guardar, .electronic, .guardar, .rock, .ochenta, .relax{
+     margin-right: 10px;
+   
+ }
+ .agregar, .compartir, .guardar, .electronic, .guardar, .rock, .ochenta, .relax, :hover{
+    cursor: pointer;
+  
+}
+ .compartir, .guardar{
+     color: #434E6A;
+     margin-left: 20px;
+     font-size: 13px;
+     
+ }
+ .comentarios span{
+     display: flex;
+     justify-content: center;
+     font-size: initial;  
+ }
+ .electronic{
+     margin-left: 60px; 
+     background-color: #9855FD;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+ }
+ .rock{
+    
+    background-color: #16EABF;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+
+ }
+ 
+ .ochenta{
+    
+    background-color:#E01721;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+ }
+ .relax{
+    
+    background-color: #ED3084;
+   color: white;
+   border-radius: 20px;
+   padding: 5px 15px;
+ }
+ .comentarios hr{
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     -webkit-box-shadow: 0px 1px 2px 0px rgba(201,201,201,1);
+-moz-box-shadow: 0px 1px 2px 0px rgba(201,201,201,1);
+box-shadow: 0px 1px 2px 0px rgba(201,201,201,1);
+margin: 10px -10px;
+ }
+ .comment{
+     display: grid;
+     grid-template: 510px  / 500px 1fr;
+     /* height: 100vh; */
+    
+     
+ }
+ 
+ .sugerencias, .addcomment{
+     /* border: 1px solid blue; */
+ }
+ .addcomment{
+     padding: 20px;
+ }
+ .comment :hover{
+    cursor: default;
+ } 
+ .addcomment p{
+     margin-bottom: 20px;
+ }
+ .comentario{
+     display: flex;
+     justify-content: start;
+     align-content: center;
+ }
+ .comentario img{
+    width: 50px;
+    /* height:  */
+    border-radius: 25px 25px 17px 17px; 
+    margin-right:8px; 
+ }
+ .comentario input{
+     background-color:white;
+     width: 300px;
+     cursor: text;
+     	
+    border-left:none;
+    border-right: none;
+    border-top: none;      
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+ }
+ .comentario input:hover{
+cursor: text; 
+}
+ .contenedor img{
+    width: 50px;
+    /* height:  */
+    border-radius: 25px 25px 17px 17px; 
+    margin-right:8px; 
+ }
+ .contenedor{
+     margin-top: 20px;
+     display: flex;
+     align-content: center;
+ }
+ .texto{
+     display: block
+ }
+ .texto p{
+     margin: 0;
+     font-weight: bold;
+     color: black;
+ }
+ .texto span{
+     font-weight: 400;
+     color: #60606F
+ }
+ .sugerencias p{
+    padding: 20px 20px 10px 20px;
+ }
+ .sugerencias img{
+     width: 60%
+ }
+ .sugerencias .name{
+     display: flex;
+     justify-items: start;
+ }
+ .sugerencias img :hover{
+cursor: pointer;
+ }
+  .sugerencias span:hover{
+    cursor: pointer;
+     }
+
+ 
+
